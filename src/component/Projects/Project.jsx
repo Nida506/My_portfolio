@@ -21,8 +21,8 @@ const Project = () => {
     isXLScreen || showAll ? projectsDetails : projectsDetails.slice(0, 4);
 
   return (
-    <div className="w-full px-4 pb-8 min-h-screen">
-      <h1 className="text-center text-4xl lg:text-6xl font-semibold font-tektur pt-3 pb-10">
+    <div className="w-full px-4 pt-3 pb-8 min-h-screen">
+      <h1 className="text-center text-3xl lg:text-6xl font-semibold font-tektur pt-3 pb-10">
         Featured{" "}
         <span className="bg-gradient-to-r from-[#8800FF] to-[#FF00C1] bg-clip-text text-transparent">
           Projects

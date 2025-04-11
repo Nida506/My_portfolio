@@ -29,13 +29,12 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="absolute  bg-gradientColor1  left-0 top-20  border-2 border-stone-300 w-[50vw] h-[100vh] bg-white px-6 py-3 md:hidden">
-          <ul className="flex flex-col ">
+        <div className="fixed z-50 bg-gradientColor1 left-0 top-20 border-2 border-stone-300 w-[50vw] h-[100vh] bg-white px-6 py-3 md:hidden">
+          <ul className="flex flex-col">
             <NavLink to="about">
               <button
-                className={
-                  "w-full text-left px-3 py-2   transition-all rounded-full font-manrope text-[20px] font-semibold"
-                }
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="w-full text-left px-3 py-2 transition-all rounded-full font-manrope text-[20px] font-semibold"
               >
                 About
               </button>
@@ -43,9 +42,8 @@ const Navbar = () => {
 
             <NavLink to="projects">
               <button
-                className={
-                  "w-full text-left  px-3 py-2  transition-all rounded-full font-manrope text-[20px] font-semibold"
-                }
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="w-full text-left px-3 py-2 transition-all rounded-full font-manrope text-[20px] font-semibold"
               >
                 Projects
               </button>
@@ -53,9 +51,8 @@ const Navbar = () => {
 
             <NavLink to="contact">
               <button
-                className={
-                  "w-full text-left  px-3 py-2  transition-all rounded-full font-manrope text-[20px] font-semibold"
-                }
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="w-full text-left px-3 py-2 transition-all rounded-full font-manrope text-[20px] font-semibold"
               >
                 Contact
               </button>
