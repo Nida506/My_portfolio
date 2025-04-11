@@ -15,6 +15,12 @@ const Contact = () => {
     setShowToast(true);
     setTimeout(() => {
       setShowToast(false);
+      if (name && email && subject && message) {
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+      }
     }, 1000);
   };
   return (
